@@ -1,0 +1,12 @@
+<form  action=" <%= session_url %>" method="post">
+
+  <%= render "layouts/authentic" %>
+  <h2>Please Log In</h2>
+  <p>
+    <label for="user[email]">Email: </label>
+    <input type="text" name="user[email]" value="">
+  </p>
+  <label for="user[password]">Password: </label>
+  <input type="text" name="user[password]" value="">
+  <input type="submit" name="Create User" value="LOGIN">
+</form>

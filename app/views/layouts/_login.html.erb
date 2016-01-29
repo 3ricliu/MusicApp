@@ -1,0 +1,10 @@
+<%if logged_in? %>
+<p>
+  Hai <%= current_user.email %>!
+  <%= link_to "Logout", session_url, method: :delete %>
+</p>
+<p>
+<% else %>
+  <%= link_to "Login", new_session_url %>
+</p>
+<% end %>
